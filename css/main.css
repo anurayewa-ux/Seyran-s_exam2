@@ -1,0 +1,142 @@
+.bg-image {
+    background-image: url("../img/intro-bg.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fix;
+    background-position: center;
+    background-size: cover;
+}
+.bg-image1 {
+    background-image: url("../img/register-bg.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-shadow {
+    background-color: rgba(228, 222, 222, 0.274);
+}
+.text-wh{
+    color: white;
+}
+.text-wh:hover{
+    color: red;
+}
+a.hover-1 {
+    position: relative;
+    color: white!important;
+}
+.hover:hover{
+    color: red;
+}
+
+a.hover-1:hover {
+    color: red!important;
+}
+.card {
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+.card:hover {
+    transform: translateY(-15px);
+}
+.card1 {
+    cursor: pointer;
+    transition: ease 0.7s;
+}
+.card1:hover {
+    transform: translateY(-10px);
+}
+.font-size {
+    font-size: 225px;
+}
+.mt-6 {
+    margin-top: -3rem;
+}
+.bg-color {
+    background-color: #222222;
+}
+.bg-color1 {
+    background-color: #1B2121;
+}
+.bg-color2 {
+    background-color: #2E3638;
+}
+.cyzyk {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+.cyzyk li.active {
+    color: #e74c3c;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .bg-image {
+        background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+    }
+    .bg-image1 {
+        background-attachment: scroll;
+    }
+    
+    /* Navbar adjustments */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    /* Hero section */
+    .py-5 h1 {
+        font-size: 2rem;
+    }
+    
+    /* Form inputs - override inline styles */
+    .bg-image1 input[type="text"],
+    .bg-image1 input[type="number"],
+    .bg-image1 input[type="email"] {
+        padding-right: 20px !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 300px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    .bg-image1 .py-3 {
+        padding-left: 0 !important;
+        text-align: center;
+    }
+    
+    .bg-image1 button {
+        margin-left: 0 !important;
+    }
+    
+    /* Program section */
+    .cyzyk {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    /* Splide carousel already has breakpoints */
+    
+    /* General text adjustments */
+    .h2 {
+        font-size: 1.5rem;
+    }
+    
+    .h4 {
+        font-size: 1.2rem;
+    }
+    
+    /* Container padding */
+    .container-lg {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
